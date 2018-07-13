@@ -5,13 +5,19 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3665824A-1358-43F6-BF43-E8BA6DEB298A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyIdentityServer", "src\MyIdentityServer\MyIdentityServer.csproj", "{991AD1CF-2191-4345-8BAA-C6AA9260F3D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyIdentityServer", "src\MyIdentityServer\MyIdentityServer.csproj", "{991AD1CF-2191-4345-8BAA-C6AA9260F3D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApiServer", "src\MyApiServer\MyApiServer.csproj", "{71AA2A12-63C4-421F-8416-E4D9C4BA238F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyApiServer", "src\MyApiServer\MyApiServer.csproj", "{71AA2A12-63C4-421F-8416-E4D9C4BA238F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E8B78B25-3486-45BA-83A6-875D41E70B11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApiServerTests", "tests\MyApiServerTests\MyApiServerTests.csproj", "{463187D5-8929-44F1-A0C1-CCECF698AD6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyApiServerTests", "tests\MyApiServerTests\MyApiServerTests.csproj", "{463187D5-8929-44F1-A0C1-CCECF698AD6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9CF378A4-7121-4BB5-9149-ECEB0A3DD903}"
+	ProjectSection(SolutionItems) = preProject
+		LaunchServer.cmd = LaunchServer.cmd
+		LaunchTests.cmd = LaunchTests.cmd
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{991AD1CF-2191-4345-8BAA-C6AA9260F3D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -63,9 +66,15 @@ Global
 		{463187D5-8929-44F1-A0C1-CCECF698AD6E}.Release|x86.ActiveCfg = Release|Any CPU
 		{463187D5-8929-44F1-A0C1-CCECF698AD6E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{991AD1CF-2191-4345-8BAA-C6AA9260F3D1} = {3665824A-1358-43F6-BF43-E8BA6DEB298A}
 		{71AA2A12-63C4-421F-8416-E4D9C4BA238F} = {3665824A-1358-43F6-BF43-E8BA6DEB298A}
 		{463187D5-8929-44F1-A0C1-CCECF698AD6E} = {E8B78B25-3486-45BA-83A6-875D41E70B11}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82A5795E-60A3-4439-9AD6-260998220B05}
 	EndGlobalSection
 EndGlobal
